@@ -1,0 +1,17 @@
+from RPi import GPIO
+import sys
+
+try:
+	if sys.argv[1]:
+
+		order = sys.argv[1].lower()
+		if order == 'on':
+			
+		elif order == 'off':
+			
+		else:
+			print('arg must be on/off')
+	else:
+		print('pls provide arg (on/off)') 
+except Exception as e:
+	print(e)
